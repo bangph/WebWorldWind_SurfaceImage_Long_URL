@@ -17,7 +17,8 @@
               <div class="form-group">
               <select class="form-control" id="coverageList">
                 <option value="null">Select coverage to be input raster</option>
-                <option value="world_map_rgb_700MB">world_map_rgb_700MB</option>
+                <option value="world_map_new">world_map_real_color_700MB</option>
+                <option value="world_map_temperature">world_map_temperature_650MB</option>
               </select>
         </div>
 
@@ -107,7 +108,7 @@
 
                 // e.g: world_map_new
                 var coverage = $("#coverageList").val();
-                coverage = "world_map_new";                
+                // coverage = "world_map_new";                
                 var query = queryTemplate.replace("$COVERAGE", coverage);
 
                 // e.g: texas
