@@ -103,7 +103,7 @@
 
             // show generated WCPS query
             function getGeneratedWCPSQuery() {
-                var queryTemplate = 'for c in ($COVERAGE) return encode(clip(c, $WKT), "png")';
+                var queryTemplate = 'for c in ($COVERAGE) return encode(clip(c, $WKT), "png", "nodata=0")';
 
                 // e.g: world_map_new
                 var coverage = $("#coverageList").val();
